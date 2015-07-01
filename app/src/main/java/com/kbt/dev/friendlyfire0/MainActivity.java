@@ -1,19 +1,14 @@
-package com.example.kevin.myapplication;
+package com.kbt.dev.friendlyfire0;
 
-import android.annotation.TargetApi;
 import android.app.PendingIntent;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.os.Build;
-import android.provider.Telephony;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.telephony.SmsManager;
-import android.telephony.SmsMessage;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -53,7 +48,7 @@ public class MainActivity extends ActionBarActivity {
         };
 
         // Register the listener with the Location Manager to receive location updates
-        mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, locationListener);
+        mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
 
         final EditText phoneNumber = (EditText) findViewById(R.id.editText);
         final Button button = (Button) findViewById(R.id.button);

@@ -1,4 +1,4 @@
-package com.example.kevin.myapplication;
+package com.kbt.dev.friendlyfire0;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
